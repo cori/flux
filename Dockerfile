@@ -1,5 +1,7 @@
 # Set the base image
 FROM node:18
+ENV HOST=0.0.0.0
+ENV PORT=8373
 
 # Set the working directory
 WORKDIR /app
@@ -17,5 +19,5 @@ COPY . .
 EXPOSE 8373
 
 # Start the application
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "docker:dev"]
 

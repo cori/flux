@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "docker:dev": "vite --host $HOST --port $PORT",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
